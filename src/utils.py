@@ -74,11 +74,10 @@ def get_grouped_epics_by_day(content_by_days, epics_with_stories):
 
 def print_formatted_output(epics_by_day):
     for date, epics in epics_by_day.items():
-        print(date)
+        print("\n", date)
         for epic_key, epic_data in epics.items():
             print(f"  {epic_data['name']} [{epic_key}]:")
             print(f"    Total Time: {epic_data['total_time']}")
             print(f"    Stories:")
             for story_key, time in epic_data['stories']:
                 print(f"      {story_key}: {time}")
-        print("\n")
