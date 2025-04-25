@@ -4,7 +4,7 @@ from utils import get_content_by_days, get_epics_with_stories, get_grouped_epics
 
 jira = get_jira_client()
 
-print("Please paste your data below. PressCtrl+D (Ctrl+Z on Windows) to finish:")
+print("Please paste your data below. Press Ctrl+D (Ctrl+Z on Windows) to finish:")
 content = sys.stdin.read().strip()
 print("Processing...")
 
